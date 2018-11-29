@@ -2,22 +2,10 @@
 
 /*--------------------------------------------Colours*/
 
-.ui-menu-color-home {
-    background-color: rgba(250, 250, 250, 0.5);
-}
-
-.ui-menu-color-music {
-    background-color: rgba(250, 250, 250, 0.5);
-}
-
-.ui-menu-color-tour-dates {
-    background-color: rgba(250, 250, 250, 0.5);
-}
-
-.ui-menu-color-gallery {
-    background-color: rgba(250, 250, 250, 0.5);
-}
-
+.ui-menu-color-home,
+.ui-menu-color-music,
+.ui-menu-color-tour-dates,
+.ui-menu-color-gallery,
 .ui-menu-color-contact {
     background-color: rgba(250, 250, 250, 0.5);
 }
@@ -29,23 +17,9 @@
 body {      
     font-family: Roboto, sans-serif;      
     font-weight: 300;      
-    background-color: #ffffff00;      
-    color: #525252;
+    background-color: #ffffff;      
+    color: rgba(0, 0, 0, 0.8);;
 } 
-
-/*--------------------------------------------Background*/
-
-html,
-.body-container {
-    height: 100vh;
-    background: url("../images/textured-wall.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
 
 /*--------------------------------------------General Other*/
 
@@ -55,10 +29,6 @@ html,
 
 a:link {
     text-decoration: none;
-}
-
-.body-members p {
-    font-size: 12px;
 }
 
 h1,
@@ -75,55 +45,19 @@ header {
     position: relative;
 }
 
-.heading p {
-    padding-top: 70px;
-    padding-bottom: 5px;
-    align-items: center;
+.heading-logo img {
+    float: left;
+    padding-bottom: 10px;
 }
 
 .page-head {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    width: 50%;
+    margin-top: 25px;
+    width: 15%;
 }
 
-.list-inline {
-    padding-left: 0px;
-    margin-left: 100px;
-    list-style: none;
-}
-
-#nav {
-    margin: 0;
-}
-
-#nav li {
-    padding: 0;
-}
-
-.menuitem {
-    height: 40px;
-    text-align: center;
-    padding: 0;
-}
-
-.menuitem a {
-    width: 100%;
-    color: #5d33ce;
-    height: 40px;
-}
-
-.menuitem span {
-    display: block;
-    width: 100%;
-    padding-top: 10px;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 300;
-    letter-spacing: 2px;
+.navbar-nav {
+    padding: 20px;
 }
 
 /*--------------------------------------------Hover.css*/
@@ -136,7 +70,7 @@ header .menuitem a:hover {
     -o-transition: all 0.35s ease-in-out;
 }
 
-footer .footmenu a:hover {
+.foothover:hover {
     color: #5d33ce;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
@@ -144,29 +78,7 @@ footer .footmenu a:hover {
     -o-transition: all 0.35s ease-in-out;
 }
 
-footer .bookus:hover {
-    color: #5d33ce;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-}
 
-footer .social-media i:hover {
-    color: #5d33ce;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-}
-
-section .contact-socialmedia li a i:hover {
-    color: #5d33ce;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-}
 
 button[type="submit"]:hover {
     background-color: #a0a0a0;
@@ -186,52 +98,84 @@ footer {
     text-align: center;
 }
 
+.footeritem span {
+    display: inline-block;
+}
+
 .footer-info {
     display: block;
-    font-family: "Exo", sans-serif;
-    font-weight: 200;
-    font-size: 15px;
     margin-top: 30px;
 }
 
 .footer-info ul li a {
+    font-family: "Exo", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
     display: block;
     color: #fafafa;
     margin-top: 30px;
     letter-spacing: 2px;
     text-align: center;
+    padding-left: 0;
+}
+
+.social-links {
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .social-media i {
-    letter-spacing: 25px;
+    letter-spacing: 50px;
 }
 
 .bookus {
     padding: 0;
     margin-top: 30px;
     text-align: center;
+    font-weight: 500;
 }
 
 /*--------------------------------------------About Main*/
 
-.about-main {
-    padding: 30px;
+.heading h1{
+    text-align: center;
 }
 
-.about-members {
-    padding-top: 5px;
-    padding-bottom: 30px;
+.information {
+    font-family: "Exo", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    background-color: rgba(160,160,160, 0.6);
+    color: #fafafa;
+    position: relative;
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 24px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 24px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 24px -2px rgba(0,0,0,0.75);
 }
 
-.video {
-    float: left;
-    
+.bandmembers {
+    display: inline-block;
+    padding-right: 100px;
+}
+
+.video video {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    width: 80%;   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*--------------------------------------------Tour Dates*/
 
 .tourdate-item {
-    padding-top: 30px;
+    padding-top: 50px;
     padding-right: 32px;
     padding-bottom: 0px;
     padding-left: 28px;
@@ -251,7 +195,6 @@ footer {
 .tourdate-item::before {
     position: absolute;
     left: 40px;
-    top: 60px;
     display: block;
     font-family: "Exo", sans-serif;
     font-weight: 500;
@@ -264,7 +207,7 @@ footer {
     width: 12px;
     height: 12px;
     display: block;
-    top: 58px;
+    top: 75px;
     position: absolute;
     left: -7px;
     border-radius: 12px;
@@ -277,17 +220,12 @@ footer {
     padding: 30px;
 }
 
-.tickets {
-    width: 300px;
-    padding: 5px;
-}
-
-.btn-default {
-    background-color: rgba(250, 250, 250, 0.9);
-}
-
 .tickets a {
     color: #484848;
+}
+
+.ticket-colourbck {
+    padding-bottom: 1px;
 }
 
 .ticket-colourbck a {
@@ -296,10 +234,14 @@ footer {
     color: #000000;
     display: block;
     border-color: #f0ffff;
-    padding: 10px;
+    padding: 0.3px;
     border-radius: 15px;
     text-align: center;
     margin: 20px;
+}
+
+.buytickets {
+    padding-top: 56px;
 }
 
 .hvr-sweep-to-right:before {
@@ -329,7 +271,11 @@ footer {
 }
 
 .audioclips {
-    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    padding-left: 0;
+    margin-left: 0;
+    position: relative;
 }
 
 .audioclips p {
@@ -356,7 +302,7 @@ footer {
     padding: 30px;
 }
 
-.contact-socialmedia li a i {
+.contact-socialmedia a i {
     width: 150px;
     height: 150px;
     padding: 70px 0;
@@ -365,14 +311,17 @@ footer {
     line-height: 10px;
     text-align: center;
     color: #fafafa;
-    background: #a0a0a0;
+    background: rgba(160,160,160, 0.6);
 }
 
-.contact-socialmedia li {
-    padding-top: 0;
-    padding-bottom: 20px;
-    padding-right: 20px;
+.contact-socialmedia a {
+    padding-right: 30px;
+}
 
+.contact-socialmedia {
+    padding-bottom: 30px;
+    padding-left: 25%;
+    padding-right: 10px;
 }
 
 .social-username {
@@ -381,6 +330,8 @@ footer {
     font-size: 26px;
     letter-spacing: 3px;
     color: rgba(93, 51, 206, 0.6);
+    padding-top: 5px;
+    text-align: center;
 }
 
 .form-about {
